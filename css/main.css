@@ -42,3 +42,26 @@ a.hover-1:hover {
     transform: translateY(-10px);
 }
 
+/* Default styles for nav links */
+.nav-masthead .nav-link {
+    color: #6c757d; /* Default text color (text-secondary) */
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for nav links */
+.nav-masthead .nav-link:hover {
+    color: white; /* Change text color to white */
+    background-color: #F27360; /* Add orange background */
+    padding: 5px 10px; /* Add some padding for a button-like feel */
+}
+
+/* Active link styling */
+.nav-masthead .nav-link.active {
+    color: #0d6efd; /* Default active color (Bootstrap primary) */
+    background-color: transparent; /* No background */
+}
+
+.bg-grlight {
+    background-color: #F4F4F4;
+}
