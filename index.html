@@ -41,7 +41,7 @@
 
 <body>
     <!-- 1 section -->
-    <div class="bg-image-intre py-5">
+    <div class="bg-image-intre py-5" data-aos="fade-down" data-aos-duration="1000">
         <div class="container-xl container-fluid py-5 text-center">
             <div class="bg-light">
                 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
@@ -106,7 +106,7 @@
     </div>
 
     <!-- 3 section  -->
-    <div class="container-fluid">
+    <div class="container-fluid" data-aos="fade-down" data-aos-duration="1000">
         <div class="row">
             <div class="col-lg-4 col-red">
                 <div>
@@ -174,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-10">
+                <div class="col-xl-2 col-10 pt-xl-0 pt-3">
                     <div class="bg-grlight py-5">
                         <div>
                             <img src="img/second-list-icon.png" alt="" class="img-fluid">
@@ -184,7 +184,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-10">
+                <div class="col-xl-2 col-10 pt-xl-0 pt-3">
                     <div class="bg-grlight py-5">
                         <div>
                             <img src="img/third-list-icon.png" alt="" class="img-fluid">
@@ -194,7 +194,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-10">
+                <div class="col-xl-2 col-10 pt-xl-0 pt-3">
                     <div class="bg-grlight py-5">
                         <div>
                             <img src="img/fourth-list-icon.png" alt="" class="img-fluid">
@@ -204,7 +204,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-10">
+                <div class="col-xl-2 col-10 pt-xl-0 pt-3">
                     <div class="bg-grlight py-5">
                         <div>
                             <img src="img/fivth-list-icon.png" alt="" class="img-fluid">
@@ -245,6 +245,47 @@
         </div>
     </div>
 
+    <!-- 5 section -->
+
+    <div class="bg-grdark">
+        <div class="container-xl py-5 text-center">
+            <div class="h2 fw-bold text-light">
+                WAHT WE CAN DO ELSE
+            </div>
+            <div class="fw-bold text-secondary">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, quasi nesciunt ad voluptatem
+                similique quam consectetur rem molestiae sint dolores dolorem eveniet maiores assumenda aut. Lorem,
+                ipsum dolor sit amet consectetur adipisicing elit. Dicta, voluptates. Nobis alias maiores harum.
+            </div>
+            <div class="container-xl">
+
+
+
+                <div class="splide pt-5 pb-4" id="second-slider" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track ps-3 ps-lg-0">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="img/second-portfolio-item.jpg" alt="" class="img-fluid h-100">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/third-portfolio-item.jpg" alt="" class="img-fluid h-100">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/fourth-portfolio-item.jpg" alt="" class="img-fluid h-100">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/first-portfolio-item.jpg" alt="" class="img-fluid h-100">
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
 
 
@@ -276,11 +317,45 @@
     </script>
     <script src="js/bootstrap.bundle.min.js.map"></script>
     <script src="js/fancybox.umd.js"></script>
-    <script></script>
     <script src="js/splide.min.js"></script>
-    <script></script>
+    <script>
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            interval: 2500,
+            autoplay: true,
+            arrows: false,
+            pagination: true,
+            gap: '20px',
+            perMove: 1,
+            perPage: 4,
+
+        });
+
+        splide.mount();
+
+        var splide2 = new Splide('#second-slider', {
+            type: 'loop',
+            interval: 2500,
+            autoplay: true,
+            arrows: false,
+            pagination: true,
+            gap: '20px',
+            perMove: 1,
+            perPage: 4,
+            breakpoints: {
+                991: {
+                    perPage: 3,
+                },
+                767: {
+                    perPage: 2,
+                },
+                567: {
+                    perPage: 1,
+                },
+            }
+        });
+    </script>
     <script src="js/splide.min.js.map"></script>
-    <script></script>
 
 </body>
 
