@@ -243,9 +243,45 @@
                 </div>
                 <div class="col-xl-6 col-10 pt-xl-0 pt-5">
                     <div>
-                        <img src="img/right-side-image_1.jpg" alt="" class="img-fluid">
+                        <a href="img/right-side-image_1.jpg" data-fancybox="gallery">
+                            <img src="img/right-side-image_1.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    
+                    <div class="d-none">
+                        <div class="p-5">
+                            <div>
+                                <a href="img/blog-post-1.jpg" class="text-decoration-none img-fluid"
+                                    data-fancybox="gallery" data-caption="">
+                                    <img src="img/blog-post-1.jpg" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <div>
+                                <a href="img/blog-post-2.jpg" class="text-decoration-none img-fluid"
+                                    data-fancybox="gallery" data-caption="">
+                                    <img src="img/blog-post-2.jpg" />
+                                </a>
+                            </div>
+    
+                        </div>
+                        <div class="p-5">
+                            <div class="">
+                                <a href="img/blog-post-3.jpg" class="img-fluid"
+                                    data-fancybox="gallery" data-caption="">
+                                    <img src="img/blog-post-3.jpg" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
+                
+
+                
+                
+                
             </div>
         </div>
     </div>
@@ -442,6 +478,11 @@
     </script>
     <script src="js/bootstrap.bundle.min.js.map"></script>
     <script src="js/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            'animated': true,
+        });
+    </script>
     <script src="js/splide.min.js"></script>
     <script>
         var splide = new Splide('.splide', {
